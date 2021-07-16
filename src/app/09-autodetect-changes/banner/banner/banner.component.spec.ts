@@ -18,19 +18,19 @@ describe('BannerComponent', () => {
     h1 = fixture.nativeElement.querySelector('h1');
   });
 
-  it('should display original title', () => {
+  xit('should display original title', () => {
     // Hooray! No `fixture.detectChanges()` needed
     expect(h1.textContent).toContain(component.title);
   });
 
-  it('should still see original title after component.title change', () => {
+  xit('should still see original title after component.title change', () => {
     const oldTitle = component.title;
     component.title = 'Test Title';
     // Displayed title is old because Angular didn't hear the change :(
     expect(h1.textContent).toContain(oldTitle);
   });
 
-  it('should display updated title after detectChanges', () => {
+  xit('should display updated title after detectChanges', () => {
     component.title = 'Test Title';
     fixture.detectChanges(); // detect changes explicitly
     expect(h1.textContent).toContain(component.title);

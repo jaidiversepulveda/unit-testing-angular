@@ -24,16 +24,16 @@ describe('WelcomeComponent', () => {
     userService = TestBed.inject(UserService);
   });
 
-  it('should not have welcome message after construction', () => {
+  xit('should not have welcome message after construction', () => {
     expect(comp.welcome).toBeUndefined();
   });
 
-  it('should welcome logged in user after Angular calls ngOnInit', () => {
+  xit('should welcome logged in user after Angular calls ngOnInit', () => {
     comp.ngOnInit();
     expect(comp.welcome).toContain(userService.user.name);
   });
 
-  it('should ask user to log in if not logged in after ngOnInit', () => {
+  xit('should ask user to log in if not logged in after ngOnInit', () => {
     userService.isLoggedIn = false;
 
     comp.ngOnInit();

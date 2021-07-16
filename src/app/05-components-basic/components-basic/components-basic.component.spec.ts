@@ -19,7 +19,7 @@ describe('ComponentsBasicComponent', () => {
     fixture.detectChanges();
   });
 
-  it('#clicked() should toggle #isOn', () => {
+  xit('#clicked() should toggle #isOn', () => {
     expect(component.isOn).toBe(false);
     component.clicked();
     expect(component.isOn).toBeTruthy();
@@ -27,7 +27,7 @@ describe('ComponentsBasicComponent', () => {
     expect(component.isOn).toBeFalsy();
   });
 
-  it('#clicked() should set #message to "is on"', () => {
+  xit('#clicked() should set #message to "is on"', () => {
     expect(component.message).toMatch(/Apagada/i);
     component.clicked();
     expect(component.message).toMatch(/Prendida/i);

@@ -24,13 +24,13 @@ describe('BannerComponent', () => {
   //   expect(h1.textContent).toContain(component.title);
   // });
 
-  it('should display original title after detectChanges()', () => {
+  xit('should display original title after detectChanges()', () => {
     fixture.detectChanges();
     expect(h1.textContent).toContain(component.title);
   });
 
   // With Delay
-  it('should display a different test title', () => {
+  xit('should display a different test title', () => {
     component.title = 'Test Title';
     fixture.detectChanges();
     expect(h1.textContent).toContain('Test Title');
